@@ -7,6 +7,16 @@ const routes = [
     name: 'home',
     component: Home
   },
+  {
+    path: '/404',
+    name: '404',
+    component: () => import("../views/404")
+  },
+  {
+    path: '/:name',
+    name: 'dynamic',
+    component: () => import("../views/Dynamic")
+  },
 ]
 
 const router = createRouter({
