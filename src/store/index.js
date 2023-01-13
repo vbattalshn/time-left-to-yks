@@ -12,7 +12,7 @@ export default createStore({
     },
     lgs: {
       hour: 9,
-      minute: 15,
+      minute: 30,
       month: 6,
       day: 6,
       year: 2023,
