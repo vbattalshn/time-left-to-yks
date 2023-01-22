@@ -67,7 +67,7 @@ export default {
     },
     secondsToDhms() {
       var seconds = Number(this.time);
-      this.days = this.formatNumber(Math.floor(seconds / (3600 * 24)));
+      this.days = this.formatNumber(Math.floor(seconds / (3600 * 24)), true);
       this.hours = this.formatNumber(Math.floor((seconds % (3600 * 24)) / 3600));
       this.minutes = this.formatNumber(Math.floor((seconds % 3600) / 60));
       this.seconds = this.formatNumber(Math.floor(seconds % 60));
@@ -75,12 +75,21 @@ export default {
     mktime(hour, minute, month, day, year) {
       return new Date(year, month - 1, day, hour, minute, 0).getTime() / 1000;
     },
-    formatNumber(number){
-      if(number <= 9){
-        return (("0" + number).slice(-2));
+    formatNumber(number, isDay = false){
+      if(isDay){
+        if(number <= 99){
+          return (("00" + number).slice(-3));
+        }else{
+          return number;
+        }
       }else{
-        return number;
+        if(number <= 9){
+          return (("0" + number).slice(-2));
+        }else{
+          return number;
+        }
       }
+      
     },
   },
 };
