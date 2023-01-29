@@ -1,5 +1,5 @@
 <template>
-  <div v-if="false" class="comment">Test</div>
+  <div v-if="false" class="banner">Banner</div>
   <header>
     <div class="container">
       <router-link to="/" class="logo">
@@ -34,11 +34,11 @@ header {
   padding: 0.5rem;
 }
 
-.comment {
+.banner {
   background: #ff416c;
   background: -webkit-linear-gradient(to right, #ff4b2b, #ff416c);
   background: linear-gradient(to right, #ff4b2b, #ff416c);
-  padding: .25rem .5rem;
+  padding: .5rem 1rem;
   text-align: center;
 }
 
