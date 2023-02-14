@@ -21,8 +21,8 @@ export default createStore({
     msu: {
       hour: 10,
       minute: 15,
-      month: 3,
-      day: 19,
+      month: 4,
+      day: 2,
       year: 2023,
       title: "MSÜ 2023'e son"
     },
