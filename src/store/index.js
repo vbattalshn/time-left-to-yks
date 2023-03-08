@@ -26,5 +26,13 @@ export default createStore({
       year: 2023,
       title: "MSÜ 2023'e son"
     },
+    secim: {
+      hour: 8,
+      minute: 0,
+      month: 5,
+      day: 14,
+      year: 2023,
+      title: "2023 Seçimlerine Son"
+    },
   },
 });
