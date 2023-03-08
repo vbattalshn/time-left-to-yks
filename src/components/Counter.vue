@@ -60,7 +60,6 @@ export default {
   methods: {
     startCounter() {
       this.interval = setInterval(() => {
-        console.log("working");
         if(this.time > 0){
           this.time--;
         }else{
