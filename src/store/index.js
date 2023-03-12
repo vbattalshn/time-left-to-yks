@@ -14,7 +14,7 @@ export default createStore({
       hour: 9,
       minute: 30,
       month: 6,
-      day: 6,
+      day: 4,
       year: 2023,
       title: "LGS 2023'e son"
     },
