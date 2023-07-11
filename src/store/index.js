@@ -8,7 +8,7 @@ export default createStore({
       month: 6,
       day: 22,
       year: 2024,
-      title: "YKS 2023'e son"
+      title: "YKS 2024'e son"
     },
     lgs: {
       hour: 9,
@@ -16,7 +16,7 @@ export default createStore({
       month: 6,
       day: 2,
       year: 2024,
-      title: "LGS 2023'e son"
+      title: "LGS 2024'e son"
     },
     msu: {
       hour: 10,
@@ -24,7 +24,7 @@ export default createStore({
       month: 3,
       day: 24,
       year: 2024,
-      title: "MSÜ 2023'e son"
+      title: "MSÜ 2024'e son"
     }
   },
 });
